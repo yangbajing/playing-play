@@ -1,6 +1,8 @@
 # 安装
 
-这里我不使用官方的 `active` 来创建 Play 项目，使用手动创建的方式。这样创建的项目会更轻量，读者也可以更明析的了解 Play 项目结构。
+*(本文源码目录在：[https://github.com/yangbajing/playing-play-code/tree/master/first-play](https://github.com/yangbajing/playing-play-code/tree/master/first-play))*
+
+这里我不使用官方的 [`activator`](https://www.lightbend.com/community/core-tools/activator-and-sbt) 来创建 Play 项目，使用手动创建的方式。这样创建的项目会更轻量，读者也可以更明析的了解 Play 项目结构。
 
 ## 简版
 
