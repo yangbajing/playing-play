@@ -3,7 +3,6 @@
 * [介绍](README.md)
 * [开始玩](playing/README.md)
   * [安装](playing/install.md)
-  * [Playing](playing/playing.md)
 * [经典MVC](mvc/README.md)
   * [控制路由和响应结果](mvc/route-result.md)
   * [定义API](mvc/define-api.md)
