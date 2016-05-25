@@ -1,0 +1,541 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>将WEB工程拆分到子项目 | Playing Play</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../more/index.html" />
+    
+    
+    <link rel="prev" href="../engineering/index.html" />
+    
+
+        <script>window["gitbook-plugin-github-buttons"] = {"repo":"yangbajing/playing-play","types":["star","watch"],"size":"small"};</script>
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.1"
+        data-chapter-title="将WEB工程拆分到子项目"
+        data-filepath="engineering/subproject.md"
+        data-basepath=".."
+        data-revision="Wed May 25 2016 13:30:08 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="playing/index.html">
+            
+                
+                    <a href="../playing/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        开始玩
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="playing/install.html">
+            
+                
+                    <a href="../playing/install.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        从零开始创建Play工程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="mvc/index.html">
+            
+                
+                    <a href="../mvc/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        经典MVC
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="mvc/route-result.html">
+            
+                
+                    <a href="../mvc/route-result.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        控制路由和响应结果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="mvc/define-api.html">
+            
+                
+                    <a href="../mvc/define-api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="mvc/api-project.html">
+            
+            <span><b>2.3.</b> 实战：一个API项目</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="mvc/page.html">
+            
+            <span><b>2.4.</b> 渲染页面</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="mvc/auth.html">
+            
+            <span><b>2.5.</b> 安全</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="mvc/sign.html">
+            
+            <span><b>2.6.</b> 实战：用户登录、注册</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="mvc/fileupload.html">
+            
+            <span><b>2.7.</b> 文件上传</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="websocket/index.html">
+            
+            <span><b>3.</b> WebSocket</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="websocket/websocket.html">
+            
+            <span><b>3.1.</b> WebSocket</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="websocket/actor.html">
+            
+            <span><b>3.2.</b> WebSocket与Actor</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="websocket/action.html">
+            
+            <span><b>3.3.</b> 实战：XXX</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="engineering/index.html">
+            
+                
+                    <a href="../engineering/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        工程化
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1" data-path="engineering/subproject.html">
+            
+                
+                    <a href="../engineering/subproject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        将WEB工程拆分到子项目
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="run/index.html">
+            
+            <span><b>5.</b> 运行与部署</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="run/run.html">
+            
+            <span><b>5.1.</b> 运行程序</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="run/package.html">
+            
+            <span><b>5.2.</b> 打包</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="run/system-package.html">
+            
+            <span><b>5.3.</b> 打包成系统安装文件</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="more/index.html">
+            
+                
+                    <a href="../more/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        更多
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="more/sbt-install.html">
+            
+                
+                    <a href="../more/sbt-install.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        sbt安装
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Playing Play</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5C06;web&#x5DE5;&#x7A0B;&#x62C6;&#x5206;&#x5230;&#x5B50;&#x9879;&#x76EE;">&#x5C06;WEB&#x5DE5;&#x7A0B;&#x62C6;&#x5206;&#x5230;&#x5B50;&#x9879;&#x76EE;</h1>
+<p>&#x5728;&#x65E5;&#x5E38;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F1A;&#x628A;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x90E8;&#x5206;&#x3002;&#x800C;&#x8FD9;&#x4E2A;&#x5212;&#x5206;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x4ECE;URI&#x4E0A;&#x4F53;&#x73B0;&#x51FA;&#x6765;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<ul>
+<li>/api: &#x666E;&#x901A;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;</li>
+<li>/admin: &#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;</li>
+<li>/sdk: &#x5BF9;&#x5916;&#x63D0;&#x4F9B;API&#x670D;&#x52A1;</li>
+<li>/vendor: &#x63A5;&#x5165;&#x7B2C;3&#x65B9;&#x7CFB;&#x7EDF;</li>
+</ul>
+<p>&#x82E5;&#x5411;&#x4E0A;&#x9762;&#x8FD9;&#x6837;&#x7CFB;&#x7EDF;&#x5F88;&#x660E;&#x6670;&#x7684;&#x5206;&#x4E3A;4&#x5927;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;4&#x5757;&#x7ED9;&#x62C6;&#x5206;&#x51FA;&#x6765;&#x5230;&#x5B50;&#x9879;&#x76EE;&#x4E2D;&#x3002;&#x518D;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;<code>web-common</code>&#x548C;<code>web</code>&#x9879;&#x76EE;&#x672C;&#x8EAB;&#xFF0C;
+&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x539F;&#x6765;&#x7684;&#x4E00;&#x4E2A;<code>web</code>&#x9879;&#x76EE;&#x62C6;&#x5206;&#x6210;6&#x4E2A;&#x3002;</p>
+<ul>
+<li>web: &#x6574;&#x4E2A;Play&#x5E94;&#x7528;&#x7684;&#x5165;&#x53E3;&#x9879;&#x76EE;</li>
+<li>web-common: &#x5B58;&#x5165;&#x516C;&#x5171;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x5728;&#x6B64;&#x9879;&#x76EE;&#x914D;&#x7F6E;&#x4E86;&#x53CD;&#x5411;&#x8DEF;&#x7531;&#x6620;&#x5C04;</li>
+<li>web-api: API</li>
+<li>web-admin: &#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;&#x5728;&#x6B64;&#x5B50;&#x9879;&#x76EE;</li>
+<li>web-sdk: &#x5BF9;&#x5916;&#x670D;&#x52A1;&#x7684;&#x4EE3;&#x7801;&#x5728;&#x6B64;&#x5B50;&#x9879;&#x76EE;</li>
+<li>web-vendor: &#x63A5;&#x5165;&#x7684;&#x7B2C;3&#x65B9;&#x5E94;&#x7528;&#x5728;&#x6B64;&#x5B50;&#x9879;&#x76EE;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x3001;&#x652F;&#x4ED8;&#x5B9D;&#x7B49;</li>
+</ul>
+<p>&#x5177;&#x4F53;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><a name="app-dir.txt" href="_partial/app-dir.txt">app-dir.txt</a></p>
+</blockquote>
+<pre><code class="lang-text">&#x251C;&#x2500;&#x2500; web
+&#x2502;   &#x251C;&#x2500;&#x2500; app
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; IndexController.scala
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
+&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; index.scala.html
+&#x2502;   &#x251C;&#x2500;&#x2500; conf
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; routes
+&#x251C;&#x2500;&#x2500; web-admin
+&#x2502;   &#x251C;&#x2500;&#x2500; app
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; admin
+&#x2502;   &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
+&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; admin
+&#x2502;   &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
+&#x2502;   &#x2514;&#x2500;&#x2500; conf
+&#x2502;       &#x2514;&#x2500;&#x2500; admin.routes
+&#x251C;&#x2500;&#x2500; web-api
+&#x2502;   &#x251C;&#x2500;&#x2500; app
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; api
+&#x2502;   &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
+&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; api
+&#x2502;   &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
+&#x2502;   &#x2514;&#x2500;&#x2500; conf
+&#x2502;       &#x2514;&#x2500;&#x2500; api.routes
+&#x251C;&#x2500;&#x2500; web-common
+&#x2502;   &#x251C;&#x2500;&#x2500; app
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; BaseController.scala
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
+&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; _layout.scala.html
+&#x2502;   &#x2514;&#x2500;&#x2500; conf
+&#x2502;       &#x2514;&#x2500;&#x2500; reference.conf
+&#x251C;&#x2500;&#x2500; web-sdk
+&#x2502;   &#x251C;&#x2500;&#x2500; app
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; sdk
+&#x2502;   &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
+&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; sdk
+&#x2502;   &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
+&#x2502;   &#x2514;&#x2500;&#x2500; conf
+&#x2502;       &#x2514;&#x2500;&#x2500; sdk.routes
+&#x2514;&#x2500;&#x2500; web-vendor
+    &#x251C;&#x2500;&#x2500; app
+    &#x2502;   &#x251C;&#x2500;&#x2500; controllers
+    &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; vendor
+    &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
+    &#x2502;   &#x2514;&#x2500;&#x2500; views
+    &#x2502;       &#x2514;&#x2500;&#x2500; vendor
+    &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
+    &#x2514;&#x2500;&#x2500; conf
+        &#x2514;&#x2500;&#x2500; vendor.routes
+</code></pre>
+<h2 id="&#x53CD;&#x5411;&#x8DEF;&#x7531;">&#x53CD;&#x5411;&#x8DEF;&#x7531;</h2>
+<p>&#x5F53;<code>web-api</code>&#xFF0C;<code>web-admin</code>&#xFF0C;<code>web-sdk</code>&#xFF0C;<code>web-vendor</code>&#x76F8;&#x4E92;&#x4E0D;&#x4F9D;&#x8D56;&#x4E14;<code>web</code>&#x5728;&#x4F9D;&#x8D56;&#x94FE;&#x7684;&#x9876;&#x5C42;&#x65F6;&#xFF0C;&#x82E5;&#x6211;&#x4EEC;&#x5728;<code>web-vendor</code>&#x9879;&#x76EE;&#x65F6;&#x5411;&#x8BBF;&#x95EE;
+<code>web</code>&#x6216;<code>web-api</code>&#x9879;&#x76EE;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x53CD;&#x5411;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x4E86;&#x3002;</p>
+<pre><code class="lang-scala"><span class="hljs-type">RoutesKeys</span>.aggregateReverseRoutes := <span class="hljs-type">Seq</span>(web, webApi, webAdmin, webSdk, webVendor)
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;<code>web-vendor</code>&#x9879;&#x76EE;&#x7684;Play&#x6A21;&#x7248;&#x9875;&#x9762;&#x4E2D;&#x4F7F;&#x7528;<code>@routes.xxxx</code>&#x8BED;&#x53E5;&#x8BBF;&#x95EE;<code>web</code>&#x9879;&#x76EE;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8DEF;&#x7531;&#x4E86;&#x3002;</p>
+<blockquote>
+<p><a name="index.scala.html" href="_partial/views/vendor/index.scala.html">index.scala.html</a></p>
+</blockquote>
+<pre><code class="lang-html">@(title: String)
+@_layout(title) {
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>@title<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;@controllers.routes.IndexController.index&quot;</span>&gt;</span>Back /<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+}
+</code></pre>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x628A;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x90FD;&#x5199;&#x5728;&#x4E00;&#x4E2A;<code>web</code>&#x9879;&#x76EE;&#x91CC;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x597D;&#x7684;&#x5B9E;&#x8DF5;&#xFF0C;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x628A;&#x4E0D;&#x540C;&#x529F;&#x80FD;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x9879;&#x76EE;&#x4E2D;&#x3002;
+&#x8FD9;&#x6837;&#x505A;&#x9664;&#x4E86;&#x4F1A;&#x6709;&#x66F4;&#x5FEB;&#x7684;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x4EE5;&#x5916;&#xFF0C;&#x5BF9;&#x5DE5;&#x7A0B;&#x6A21;&#x5757;&#x5316;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x5F88;&#x597D;&#x7684;&#x4FC3;&#x8FDB;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x628A;&#x76F8;&#x540C;&#x529F;&#x80FD;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5165;&#x540C;&#x4E00;&#x4E2A;&#x5B50;&#x9879;&#x76EE;&#x4EE5;&#x540E;&#xFF0C;
+&#x56E2;&#x961F;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x7684;&#x5206;&#x5DE5;&#x534F;&#x4F5C;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x5C06;&#x53EF;&#x4EE5;&#x66F4;&#x4E13;&#x6CE8;&#x7684;&#x5728;&#x7279;&#x5B9A;&#x76EE;&#x5F55;&#x91CC;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x90A3;&#x90E8;&#x5206;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x800C;&#x4E14;&#xFF0C;&#x5728;&#x5BF9;&#x5DE5;&#x7A0B;&#x505A;&#x9879;&#x76EE;&#x62C6;&#x5206;&#x4EE5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x6709;&#x65F6;&#x95F4;&#x6765;&#x7406;&#x987A;&#x6574;&#x4E2A;&#x5DE5;&#x7A0B;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;&#x4E0D;&#x4F1A;&#x5411;&#x628A;&#x6240;&#x4EE5;&#x4EE3;&#x7801;&#x90FD;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x91CC;&#x90A3;&#x6837;&#x4E00;&#x56E2;&#x7CDF;&#xFF0C;&#x56E0;&#x4E3A;&#x62C6;&#x5206;&#x5B50;&#x9879;&#x76EE;&#x540E;&#x4F60;
+&#x9700;&#x8981;&#x8BA4;&#x771F;&#x8003;&#x8651;&#x6574;&#x4E2A;&#x4F9D;&#x8D56;&#x94FE;&#x7684;&#x7BA1;&#x7406;&#x3002;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x5B9E;&#x8DF5;&#x65B9;&#x5F0F;&#x662F;&#xFF1A;&#x5355;&#x5411;&#x4F9D;&#x8D56;&#xFF0C;&#x4ECE;&#x4E0A;&#x5411;&#x4E0B;&#x4F20;&#x9012;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../engineering/index.html" class="navigation navigation-prev " aria-label="Previous page: 工程化"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../more/index.html" class="navigation navigation-next " aria-label="Next page: 更多"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-duoshuo/duoshuo.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github-buttons/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"duoshuo":{"short_name":"yangbajing-me","theme":"default"},"github-buttons":{"repo":"yangbajing/playing-play","types":["star","watch"],"size":"small"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"github":{"url":"https://github.com/yangbajing/playing-play"},"include-codeblock":{},"mermaid":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

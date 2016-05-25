@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>控制路由和响应结果 | Playing Play</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../mvc/define-api.html" />
+    
+    
+    <link rel="prev" href="../mvc/index.html" />
+    
+
+        <script>window["gitbook-plugin-github-buttons"] = {"repo":"yangbajing/playing-play","types":["star","watch"],"size":"small"};</script>
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.1"
+        data-chapter-title="控制路由和响应结果"
+        data-filepath="mvc/route-result.md"
+        data-basepath=".."
+        data-revision="Wed May 25 2016 13:30:08 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="playing/index.html">
+            
+                
+                    <a href="../playing/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        开始玩
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="playing/install.html">
+            
+                
+                    <a href="../playing/install.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        从零开始创建Play工程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="mvc/index.html">
+            
+                
+                    <a href="../mvc/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        经典MVC
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="mvc/route-result.html">
+            
+                
+                    <a href="../mvc/route-result.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        控制路由和响应结果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="mvc/define-api.html">
+            
+                
+                    <a href="../mvc/define-api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定义API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="mvc/api-project.html">
+            
+            <span><b>2.3.</b> 实战：一个API项目</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="mvc/page.html">
+            
+            <span><b>2.4.</b> 渲染页面</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="mvc/auth.html">
+            
+            <span><b>2.5.</b> 安全</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="mvc/sign.html">
+            
+            <span><b>2.6.</b> 实战：用户登录、注册</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="mvc/fileupload.html">
+            
+            <span><b>2.7.</b> 文件上传</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="websocket/index.html">
+            
+            <span><b>3.</b> WebSocket</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="websocket/websocket.html">
+            
+            <span><b>3.1.</b> WebSocket</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="websocket/actor.html">
+            
+            <span><b>3.2.</b> WebSocket与Actor</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="websocket/action.html">
+            
+            <span><b>3.3.</b> 实战：XXX</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="engineering/index.html">
+            
+                
+                    <a href="../engineering/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        工程化
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="engineering/subproject.html">
+            
+                
+                    <a href="../engineering/subproject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        将WEB工程拆分到子项目
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="run/index.html">
+            
+            <span><b>5.</b> 运行与部署</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="run/run.html">
+            
+            <span><b>5.1.</b> 运行程序</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="run/package.html">
+            
+            <span><b>5.2.</b> 打包</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="run/system-package.html">
+            
+            <span><b>5.3.</b> 打包成系统安装文件</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="more/index.html">
+            
+                
+                    <a href="../more/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        更多
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="more/sbt-install.html">
+            
+                
+                    <a href="../more/sbt-install.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        sbt安装
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Playing Play</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x63A7;&#x5236;&#x8DEF;&#x7531;&#x548C;&#x54CD;&#x5E94;&#x7ED3;&#x679C;">&#x63A7;&#x5236;&#x8DEF;&#x7531;&#x548C;&#x54CD;&#x5E94;&#x7ED3;&#x679C;</h1>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../mvc/index.html" class="navigation navigation-prev " aria-label="Previous page: 经典MVC"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../mvc/define-api.html" class="navigation navigation-next " aria-label="Next page: 定义API"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-duoshuo/duoshuo.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github-buttons/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"duoshuo":{"short_name":"yangbajing-me","theme":"default"},"github-buttons":{"repo":"yangbajing/playing-play","types":["star","watch"],"size":"small"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"github":{"url":"https://github.com/yangbajing/playing-play"},"include-codeblock":{},"mermaid":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
