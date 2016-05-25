@@ -27,7 +27,7 @@ chmod u+x ~/bin/sbt
 ## 使用`Repox`加速sbt
 
 <a target="_blank" href="http://centaur.github.io/repox/">Repox（社区公服，若大家觉得好友的话希望能捐助）</a> 是 @老猪 开发的一款：“改善sbt解决依赖的速度”的开源软件。
-我们可以使用它来解决下载依赖过慢和伟大的墙造成的很多资源不能访问问题。这里摘录官方WIKI的< target="_blank" href="https://github.com/Centaur/repox/wiki/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97">入门指南</a>
+我们可以使用它来解决下载依赖过慢和伟大的墙造成的很多资源不能访问问题。这里摘录官方WIKI的<a target="_blank" href="https://github.com/Centaur/repox/wiki/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97">入门指南</a>
 
 1. 配置 ~/.sbt/repositories 文件（如果文件还未创建过，则创建它），除了本地缓存外，仅使用repox作为仓库。文件内容如下：
 

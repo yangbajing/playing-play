@@ -11,7 +11,7 @@ mkdir first-play
 cd first-play
 mkdir -p app/controllers conf test/controllers project
 
-echo 'addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.2")
+echo 'addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.3")
 ' >> project/plugins.sbt
 
 echo 'sbt.version=0.13.11
