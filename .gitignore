@@ -2,3 +2,6 @@
 _book/
 node_modules/
 .idea/
+book.pdf
+book.epub
+book.mobi
