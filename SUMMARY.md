@@ -2,7 +2,7 @@
 
 * [介绍](README.md)
 * [开始玩](playing/README.md)
-  * [安装](playing/install.md)
+  * [从零开始创建Play工程](playing/install.md)
 * [经典MVC](mvc/README.md)
   * [控制路由和响应结果](mvc/route-result.md)
   * [定义API](mvc/define-api.md)
@@ -11,14 +11,20 @@
   * [安全](mvc/auth.md)
   * [实战：用户登录、注册](mvc/sign.md)
   * [文件上传](mvc/fileupload.md)
-* [流处理](stream/README.md)
-  * [Chunk](stream/chunk.md)
-  * [Comet](stream/comet.md)
-  * [EventStream](stream/event-stream.md)
+<!--* [流处理](stream/README.md)-->
+  <!--* [Chunk](stream/chunk.md)-->
+  <!--* [Comet](stream/comet.md)-->
+  <!--* [EventStream](stream/event-stream.md)-->
 * [WebSocket](websocket/README.md)
   * [WebSocket](websocket/websocket.md)
   * [WebSocket与Actor](websocket/actor.md)
   * [实战：XXX](websocket/action.md)
-* [部署与运行](run/README.md)
+* [工程化](engineering/README.md)
+  * [将WEB工程拆分到子项目](engineering/subproject.md)
+* [运行与部署](run/README.md)
+  * [运行程序](run/run.md)
+  * [打包](run/package.md)
+  * [打包成系统安装文件](run/system-package.md)
 * [更多](more/README.md)
+  * [sbt安装](more/sbt-install.md)
 

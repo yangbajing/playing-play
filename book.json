@@ -1,0 +1,41 @@
+{
+  "plugins": [
+    "duoshuo",
+    "include-codeblock",
+    "github-buttons",
+    "mermaid",
+    "github"
+  ],
+  "pluginsConfig": {
+    "duoshuo": {
+      "short_name": "yangbajing-me",
+      "theme": "default"
+    },
+    "github-buttons": {
+      "repo": "yangbajing/playing-play",
+      "types": [
+        "star",
+        "watch"
+      ],
+      "size": "small"
+    },
+    "sharing": {
+      "weibo": true,
+      "facebook": true,
+      "twitter": true,
+      "google": false,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+        "facebook",
+        "google",
+        "twitter",
+        "weibo",
+        "instapaper"
+      ]
+    },
+    "github": {
+      "url": "https://github.com/yangbajing/playing-play"
+    }
+  }
+}

@@ -4,7 +4,7 @@
 
 *(本书基于Play 2.5，它与以前的版本有稍许不同。请注意更新您的知识库。默认都在Mac或Linux/Unix下开发，使用Windows的同学请注意可能的不同之处)*
 
-[Play官方](https://playframework.com/)对自己的介绍是“The High Velocity Web Framework For Java and Scala”，滋以为是符合的。
+[Play官方](https://playframework.com/)对自己的介绍是＂The High Velocity Web Framework For Java and Scala＂，滋以为是符合的。
 
 - 作者：杨景（yangbajing@gmail.com）
 - Github: https://github.com/yangbajing

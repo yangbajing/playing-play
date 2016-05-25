@@ -1,4 +1,4 @@
-# 安装
+# 从零开始创建Play工程
 
 *(本文源码目录在：[https://github.com/yangbajing/playing-play-code/tree/master/first-play](https://github.com/yangbajing/playing-play-code/tree/master/first-play))*
 

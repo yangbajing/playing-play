@@ -1,0 +1,56 @@
+├── web
+│   ├── app
+│   │   ├── controllers
+│   │   │   └── IndexController.scala
+│   │   └── views
+│   │       └── index.scala.html
+│   ├── conf
+│   │   └── routes
+├── web-admin
+│   ├── app
+│   │   ├── controllers
+│   │   │   └── admin
+│   │   │       └── IndexController.scala
+│   │   └── views
+│   │       └── admin
+│   │           └── index.scala.html
+│   └── conf
+│       └── admin.routes
+├── web-api
+│   ├── app
+│   │   ├── controllers
+│   │   │   └── api
+│   │   │       └── IndexController.scala
+│   │   └── views
+│   │       └── api
+│   │           └── index.scala.html
+│   └── conf
+│       └── api.routes
+├── web-common
+│   ├── app
+│   │   ├── controllers
+│   │   │   └── BaseController.scala
+│   │   └── views
+│   │       └── _layout.scala.html
+│   └── conf
+│       └── reference.conf
+├── web-sdk
+│   ├── app
+│   │   ├── controllers
+│   │   │   └── sdk
+│   │   │       └── IndexController.scala
+│   │   └── views
+│   │       └── sdk
+│   │           └── index.scala.html
+│   └── conf
+│       └── sdk.routes
+└── web-vendor
+    ├── app
+    │   ├── controllers
+    │   │   └── vendor
+    │   │       └── IndexController.scala
+    │   └── views
+    │       └── vendor
+    │           └── index.scala.html
+    └── conf
+        └── vendor.routes
