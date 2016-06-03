@@ -6,7 +6,7 @@
 
 ## 简版
 
-```
+```bash
 mkdir first-play
 cd first-play
 mkdir -p app/controllers conf test/controllers project
@@ -58,7 +58,7 @@ touch conf/application.conf
 
 现代程序开发，测试驱动是一个比较好的方式。Play 基于 [scalatest](http://scalatest.org) 开发了一套很优秀的测试套件。我们来试着写一个测试代码。
 
-```
+```bash
 echo 'package controllers
 
 import org.scalatestplus.play.PlaySpec

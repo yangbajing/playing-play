@@ -4,14 +4,14 @@
 
 下载sbt启动jar包：
 
-```sh
+```bash
 mkdir ~/bin
 wget https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.11/sbt-launch.jar
 ```
 
 创建`~/bin/sbt`脚本：
 
-```sh
+```bash
 SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -Dfile.encoding=UTF-8 -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
 java $SBT_OPTS -jar `dirname $0`/sbt-launch.jar "$@"
 ```
@@ -20,7 +20,7 @@ java $SBT_OPTS -jar `dirname $0`/sbt-launch.jar "$@"
 
 给脚本可执行权限：
 
-```
+```bash
 chmod u+x ~/bin/sbt
 ```
 
@@ -31,7 +31,7 @@ chmod u+x ~/bin/sbt
 
 1. 配置 ~/.sbt/repositories 文件（如果文件还未创建过，则创建它），除了本地缓存外，仅使用repox作为仓库。文件内容如下：
 
-```sbt
+```yaml
 [repositories]
 local
 repox-maven: http://repox.gtan.com:8078/
@@ -44,7 +44,7 @@ repox-ivy: http://repox.gtan.com:8078/, [organization]/[module]/(scala_[scalaVer
 
     - 如果你使用命令行，请在sbt命令行参数中添加 `-Dsbt.override.build.repos=true` 。例如我的sbt shell脚本的内容是这样的：
 
-    ```sh
+    ```bash
     #!/bin/sh
     export SBT_OPTS="-Dsbt.override.build.repos=true"
     exec java -Xmx512M ${SBT_OPTS} -jar $(dirname "$0")/sbt-launch.jar "$@"
@@ -52,12 +52,13 @@ repox-ivy: http://repox.gtan.com:8078/, [organization]/[module]/(scala_[scalaVer
 
     - 如果使用jetbrains IDEA，修改 `Preferences`->`SBT`->`JVM Options`->`VM parameters`，保证它包含
 
-    ```sh
+    ```bash
     -Dsbt.override.build.repos=true 
     ```
 
     - 如果使用 activator，请打开 ~/.activator/activatorconfig.txt 文件（如果此文件不存在，请创建它。很明显，配置文件满天飞也是 typesafe/sbt team的诸多恶趣味之一），在其中添加一行
 
-    ```sh
+    ```bash
     -Dsbt.override.build.repos=true
     ```
+

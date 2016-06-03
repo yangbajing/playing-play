@@ -4,7 +4,9 @@
     "include-codeblock",
     "github-buttons",
     "mermaid",
-    "github"
+    "github",
+	"prism",
+	"-highlight"
   ],
   "pluginsConfig": {
     "duoshuo": {
