@@ -6,6 +6,20 @@
 
 [Play官方](https://playframework.com/)对自己的介绍是＂The High Velocity Web Framework For Java and Scala＂，滋以为是符合的。
 
+**本地读阅**
+
+```
+git clone https://github.com/yangbajing/playing-play.git
+cd playing-play
+npm -g install gitbook-cli
+gitbook install
+gitbook serve
+```
+
+打开浏览器访问：http://localhost:4000
+
+**Scala**
+
 若你是第一次接触<a target="_blank" href="http://scala-lang.org/">Scala</a>， 。
 
 一些不错的书籍：
