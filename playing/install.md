@@ -122,3 +122,8 @@ $ sbt test
 - project/plugins.sbt: sbt插件设置目录，我们在这里设置 Play 的版本
 - test: 放置测试代码的地方
 
+## 总结
+
+本文使用一些简单的命令从零开始构建了一个“基本” `Play` 应用，读者可以一步一步清晰的尝试手动创建一个 `Play` 应用。
+
+更多`Play`项目目录结构说明请看官方文档：[Play应用结构](https://playframework.com/documentation/2.5.x/Anatomy)。

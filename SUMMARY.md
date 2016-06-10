@@ -11,7 +11,7 @@
   * [安全](mvc/auth.md)
   * [实战：用户登录、注册](mvc/sign.md)
   * [文件上传](mvc/fileupload.md)
-<!--* [流处理](stream/README.md)-->
+  <!--* [流处理](stream/README.md)-->
   <!--* [Chunk](stream/chunk.md)-->
   <!--* [Comet](stream/comet.md)-->
   <!--* [EventStream](stream/event-stream.md)-->
@@ -27,4 +27,3 @@
   * [打包成系统安装文件](run/system-package.md)
 * [更多](more/README.md)
   * [sbt安装](more/sbt-install.md)
-
