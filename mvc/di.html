@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>将WEB工程拆分到子项目 | Playing Play</title>
+        <title>依赖注入 | Playing Play</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.6">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../more/index.html" />
+    <link rel="next" href="../mvc/api-project.html" />
     
     
-    <link rel="prev" href="../engineering/index.html" />
+    <link rel="prev" href="../mvc/route-result.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="4.1"
-        data-chapter-title="将WEB工程拆分到子项目"
-        data-filepath="engineering/subproject.md"
+        data-level="2.2"
+        data-chapter-title="依赖注入"
+        data-filepath="mvc/di.md"
         data-basepath=".."
         data-revision="Tue Jun 14 2016 15:26:54 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -149,7 +149,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="mvc/di.html">
+        <li class="chapter active" data-level="2.2" data-path="mvc/di.html">
             
                 
                     <a href="../mvc/di.html">
@@ -262,7 +262,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="4.1" data-path="engineering/subproject.html">
+        <li class="chapter " data-level="4.1" data-path="engineering/subproject.html">
             
                 
                     <a href="../engineering/subproject.html">
@@ -400,108 +400,9 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x5C06;web&#x5DE5;&#x7A0B;&#x62C6;&#x5206;&#x5230;&#x5B50;&#x9879;&#x76EE;">&#x5C06;WEB&#x5DE5;&#x7A0B;&#x62C6;&#x5206;&#x5230;&#x5B50;&#x9879;&#x76EE;</h1>
-<p>&#x5728;&#x65E5;&#x5E38;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F1A;&#x628A;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x90E8;&#x5206;&#x3002;&#x800C;&#x8FD9;&#x4E2A;&#x5212;&#x5206;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x4ECE;URI&#x4E0A;&#x4F53;&#x73B0;&#x51FA;&#x6765;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
-<ul>
-<li>/api: &#x666E;&#x901A;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;</li>
-<li>/admin: &#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;</li>
-<li>/sdk: &#x5BF9;&#x5916;&#x63D0;&#x4F9B;API&#x670D;&#x52A1;</li>
-<li>/vendor: &#x63A5;&#x5165;&#x7B2C;3&#x65B9;&#x7CFB;&#x7EDF;</li>
-</ul>
-<p>&#x82E5;&#x5411;&#x4E0A;&#x9762;&#x8FD9;&#x6837;&#x7CFB;&#x7EDF;&#x5F88;&#x660E;&#x6670;&#x7684;&#x5206;&#x4E3A;4&#x5927;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;4&#x5757;&#x7ED9;&#x62C6;&#x5206;&#x51FA;&#x6765;&#x5230;&#x5B50;&#x9879;&#x76EE;&#x4E2D;&#x3002;&#x518D;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;<code>web-common</code>&#x548C;<code>web</code>&#x9879;&#x76EE;&#x672C;&#x8EAB;&#xFF0C;
-&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x539F;&#x6765;&#x7684;&#x4E00;&#x4E2A;<code>web</code>&#x9879;&#x76EE;&#x62C6;&#x5206;&#x6210;6&#x4E2A;&#x3002;</p>
-<ul>
-<li>web: &#x6574;&#x4E2A;Play&#x5E94;&#x7528;&#x7684;&#x5165;&#x53E3;&#x9879;&#x76EE;</li>
-<li>web-common: &#x5B58;&#x5165;&#x516C;&#x5171;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x5728;&#x6B64;&#x9879;&#x76EE;&#x914D;&#x7F6E;&#x4E86;&#x53CD;&#x5411;&#x8DEF;&#x7531;&#x6620;&#x5C04;</li>
-<li>web-api: API</li>
-<li>web-admin: &#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;&#x5728;&#x6B64;&#x5B50;&#x9879;&#x76EE;</li>
-<li>web-sdk: &#x5BF9;&#x5916;&#x670D;&#x52A1;&#x7684;&#x4EE3;&#x7801;&#x5728;&#x6B64;&#x5B50;&#x9879;&#x76EE;</li>
-<li>web-vendor: &#x63A5;&#x5165;&#x7684;&#x7B2C;3&#x65B9;&#x5E94;&#x7528;&#x5728;&#x6B64;&#x5B50;&#x9879;&#x76EE;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x3001;&#x652F;&#x4ED8;&#x5B9D;&#x7B49;</li>
-</ul>
-<p>&#x5177;&#x4F53;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><a id="app-dir.txt" href="_partial/app-dir.txt">app-dir.txt</a></p>
-</blockquote>
-<pre><code class="lang-text">&#x251C;&#x2500;&#x2500; web
-&#x2502;   &#x251C;&#x2500;&#x2500; app
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
-&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; IndexController.scala
-&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
-&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; index.scala.html
-&#x2502;   &#x251C;&#x2500;&#x2500; conf
-&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; routes
-&#x251C;&#x2500;&#x2500; web-admin
-&#x2502;   &#x251C;&#x2500;&#x2500; app
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
-&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; admin
-&#x2502;   &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
-&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
-&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; admin
-&#x2502;   &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
-&#x2502;   &#x2514;&#x2500;&#x2500; conf
-&#x2502;       &#x2514;&#x2500;&#x2500; admin.routes
-&#x251C;&#x2500;&#x2500; web-api
-&#x2502;   &#x251C;&#x2500;&#x2500; app
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
-&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; api
-&#x2502;   &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
-&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
-&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; api
-&#x2502;   &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
-&#x2502;   &#x2514;&#x2500;&#x2500; conf
-&#x2502;       &#x2514;&#x2500;&#x2500; api.routes
-&#x251C;&#x2500;&#x2500; web-common
-&#x2502;   &#x251C;&#x2500;&#x2500; app
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
-&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; BaseController.scala
-&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
-&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; _layout.scala.html
-&#x2502;   &#x2514;&#x2500;&#x2500; conf
-&#x2502;       &#x2514;&#x2500;&#x2500; reference.conf
-&#x251C;&#x2500;&#x2500; web-sdk
-&#x2502;   &#x251C;&#x2500;&#x2500; app
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
-&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; sdk
-&#x2502;   &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
-&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
-&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; sdk
-&#x2502;   &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
-&#x2502;   &#x2514;&#x2500;&#x2500; conf
-&#x2502;       &#x2514;&#x2500;&#x2500; sdk.routes
-&#x2514;&#x2500;&#x2500; web-vendor
-    &#x251C;&#x2500;&#x2500; app
-    &#x2502;   &#x251C;&#x2500;&#x2500; controllers
-    &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; vendor
-    &#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; IndexController.scala
-    &#x2502;   &#x2514;&#x2500;&#x2500; views
-    &#x2502;       &#x2514;&#x2500;&#x2500; vendor
-    &#x2502;           &#x2514;&#x2500;&#x2500; index.scala.html
-    &#x2514;&#x2500;&#x2500; conf
-        &#x2514;&#x2500;&#x2500; vendor.routes
-</code></pre>
-<h2 id="&#x53CD;&#x5411;&#x8DEF;&#x7531;">&#x53CD;&#x5411;&#x8DEF;&#x7531;</h2>
-<p>&#x5F53;<code>web-api</code>&#xFF0C;<code>web-admin</code>&#xFF0C;<code>web-sdk</code>&#xFF0C;<code>web-vendor</code>&#x76F8;&#x4E92;&#x4E0D;&#x4F9D;&#x8D56;&#x4E14;<code>web</code>&#x5728;&#x4F9D;&#x8D56;&#x94FE;&#x7684;&#x9876;&#x5C42;&#x65F6;&#xFF0C;&#x82E5;&#x6211;&#x4EEC;&#x5728;<code>web-vendor</code>&#x9879;&#x76EE;&#x65F6;&#x5411;&#x8BBF;&#x95EE;
-<code>web</code>&#x6216;<code>web-api</code>&#x9879;&#x76EE;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x53CD;&#x5411;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x4E86;&#x3002;</p>
-<pre><code class="lang-scala">RoutesKeys<span class="token punctuation">.</span>aggregateReverseRoutes <span class="token operator">:</span><span class="token operator">=</span> Seq<span class="token punctuation">(</span>web<span class="token punctuation">,</span> webApi<span class="token punctuation">,</span> webAdmin<span class="token punctuation">,</span> webSdk<span class="token punctuation">,</span> webVendor<span class="token punctuation">)</span>
-</code></pre>
-<p>&#x8FD9;&#x6837;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;<code>web-vendor</code>&#x9879;&#x76EE;&#x7684;Play&#x6A21;&#x7248;&#x9875;&#x9762;&#x4E2D;&#x4F7F;&#x7528;<code>@routes.xxxx</code>&#x8BED;&#x53E5;&#x8BBF;&#x95EE;<code>web</code>&#x9879;&#x76EE;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8DEF;&#x7531;&#x4E86;&#x3002;</p>
-<blockquote>
-<p><a id="index.scala.html" href="_partial/views/vendor/index.scala.html">index.scala.html</a></p>
-</blockquote>
-<pre><code class="lang-html">@(title: String)
-@_layout(title) {
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>@title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@controllers.routes.IndexController.index<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Back /<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-}
-</code></pre>
-<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
-<p>&#x628A;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x90FD;&#x5199;&#x5728;&#x4E00;&#x4E2A;<code>web</code>&#x9879;&#x76EE;&#x91CC;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x597D;&#x7684;&#x5B9E;&#x8DF5;&#xFF0C;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x628A;&#x4E0D;&#x540C;&#x529F;&#x80FD;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x9879;&#x76EE;&#x4E2D;&#x3002;
-&#x8FD9;&#x6837;&#x505A;&#x9664;&#x4E86;&#x4F1A;&#x6709;&#x66F4;&#x5FEB;&#x7684;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x4EE5;&#x5916;&#xFF0C;&#x5BF9;&#x5DE5;&#x7A0B;&#x6A21;&#x5757;&#x5316;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x5F88;&#x597D;&#x7684;&#x4FC3;&#x8FDB;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x628A;&#x76F8;&#x540C;&#x529F;&#x80FD;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5165;&#x540C;&#x4E00;&#x4E2A;&#x5B50;&#x9879;&#x76EE;&#x4EE5;&#x540E;&#xFF0C;
-&#x56E2;&#x961F;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x7684;&#x5206;&#x5DE5;&#x534F;&#x4F5C;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x5C06;&#x53EF;&#x4EE5;&#x66F4;&#x4E13;&#x6CE8;&#x7684;&#x5728;&#x7279;&#x5B9A;&#x76EE;&#x5F55;&#x91CC;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x90A3;&#x90E8;&#x5206;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
-<p>&#x800C;&#x4E14;&#xFF0C;&#x5728;&#x5BF9;&#x5DE5;&#x7A0B;&#x505A;&#x9879;&#x76EE;&#x62C6;&#x5206;&#x4EE5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x6709;&#x65F6;&#x95F4;&#x6765;&#x7406;&#x987A;&#x6574;&#x4E2A;&#x5DE5;&#x7A0B;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;&#x4E0D;&#x4F1A;&#x5411;&#x628A;&#x6240;&#x4EE5;&#x4EE3;&#x7801;&#x90FD;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x91CC;&#x90A3;&#x6837;&#x4E00;&#x56E2;&#x7CDF;&#xFF0C;&#x56E0;&#x4E3A;&#x62C6;&#x5206;&#x5B50;&#x9879;&#x76EE;&#x540E;&#x4F60;
-&#x9700;&#x8981;&#x8BA4;&#x771F;&#x8003;&#x8651;&#x6574;&#x4E2A;&#x4F9D;&#x8D56;&#x94FE;&#x7684;&#x7BA1;&#x7406;&#x3002;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x5B9E;&#x8DF5;&#x65B9;&#x5F0F;&#x662F;&#xFF1A;&#x5355;&#x5411;&#x4F9D;&#x8D56;&#xFF0C;&#x4ECE;&#x4E0A;&#x5411;&#x4E0B;&#x4F20;&#x9012;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+                        <h1 id="&#x4F9D;&#x8D56;&#x6CE8;&#x5165;">&#x4F9D;&#x8D56;&#x6CE8;&#x5165;</h1>
+<p>Play &#x662F;&#x4E00;&#x4E2A;&#x63D0;&#x4F9B;&#x4E86;Scala&#x548C;Java&#x4E24;&#x5957;API&#x7684;Full Stack WEB&#x5E94;&#x7528;&#x6846;&#x67B6;&#xFF0C;&#x5B83;&#x4ECE;2.4&#x7248;&#x672C;&#x5F00;&#x59CB;&#x63A8;&#x8350;&#x4F7F;&#x7528; Guice&#x6765;&#x4F5C;DI&#xFF08;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF09;&#x3002;
+&#x800C;&#x4ECE;2.5&#x7248;&#x672C;&#x5F00;&#x59CB;&#xFF0C;&#x8DEF;&#x7531;&#x5B9A;&#x4E49;&#x4ECE;&#x4E4B;&#x524D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;Scala object&#x6539;&#x4E3A;&#x4E86;&#x4F7F;&#x7528;class + DI&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
 
                     
                     </section>
@@ -512,10 +413,10 @@
         </div>
 
         
-        <a href="../engineering/index.html" class="navigation navigation-prev " aria-label="Previous page: 工程化"><i class="fa fa-angle-left"></i></a>
+        <a href="../mvc/route-result.html" class="navigation navigation-prev " aria-label="Previous page: 控制路由和响应结果"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../more/index.html" class="navigation navigation-next " aria-label="Next page: 更多"><i class="fa fa-angle-right"></i></a>
+        <a href="../mvc/api-project.html" class="navigation navigation-next " aria-label="Next page: 实战：API项目"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
