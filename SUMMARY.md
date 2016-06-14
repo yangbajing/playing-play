@@ -6,7 +6,7 @@
 * [经典MVC](mvc/README.md)
   * [控制路由和响应结果](mvc/route-result.md)
   * [定义API](mvc/define-api.md)
-  * [实战：一个API项目](mvc/api-project.md)
+  * [实战：API项目](mvc/api-project.md)
   * [渲染页面](mvc/page.md)
   * [安全](mvc/auth.md)
   * [实战：用户登录、注册](mvc/sign.md)
