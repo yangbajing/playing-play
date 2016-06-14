@@ -5,7 +5,7 @@
   * [从零开始创建Play工程](playing/install.md)
 * [经典MVC](mvc/README.md)
   * [控制路由和响应结果](mvc/route-result.md)
-  * [定义API](mvc/define-api.md)
+  * [依赖注入](mvc/di.md)
   * [实战：API项目](mvc/api-project.md)
   * [渲染页面](mvc/page.md)
   * [安全](mvc/auth.md)
@@ -27,3 +27,4 @@
   * [打包成系统安装文件](run/system-package.md)
 * [更多](more/README.md)
   * [sbt安装](more/sbt-install.md)
+* [附](appendix.md)
